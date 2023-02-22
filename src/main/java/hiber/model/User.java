@@ -22,6 +22,7 @@ public class User {
    @OneToOne(cascade = CascadeType.ALL)
    @JoinColumn(name = "car")
    private Car car;
+
    public User() {}
    
    public User(String firstName, String lastName, String email) {
